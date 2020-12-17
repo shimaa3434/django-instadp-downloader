@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Share+Tech+Mono&display=swap');
+body{
+    color: white;
+    box-sizing: border-box;
+    font-family: 'Share Tech Mono', monospace;
+}
+
+nav.navbar__nav{
+    color: white;
+    background-color: #34626c;
+    height: 10vh;
+}
+span.navbar-brand{
+    font-family: 'Pacifico', cursive;
+}
+div.main__container{
+    background-color: #34626c;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    height: 90vh;
+}
+input.form__item{
+    width: 40vw;
+    height: 8vh;
+}
+input.form__item:hover{
+    border: solid #86aba1 3px;
+}
+input.submit__btn{
+    background-color: #79a3b1;
+    color: white;
+    width: 10vw;
+    height: 7vh;
+}
+input.submit__btn:hover{
+    color: #0f0f0f;
+}
