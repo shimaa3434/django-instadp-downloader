@@ -4,7 +4,36 @@
 
 <div class="main__container p-5">
     {% if url != ''%}
-    <img src="{{url}}" alt="">
+    <a href="{{user_data.pic_url}}"><img src="{{user_data.pic_url}}" class="mb-2 profile__pic" height="250px"
+            width="250px" alt="profile pic"></a>
+    <div class="container main__container">
+        <table class="table table-striped main__table">
+            <tr>
+                <td>Name</td>
+                <td>{{ user_data.full_name }}</td>
+            </tr>
+            <tr>
+                <td>Bio</td>
+                <td>{{user_data.bio}}</td>
+            </tr>
+            <tr>
+                <td>
+                    Follower
+                </td>
+                <td>
+                    {{user_data.follower}}
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Following
+                </td>
+                <td>
+                    {{user_data.following}}
+                </td>
+            </tr>
+        </table>
+    </div>
     {% else %}
     <h1>Username Not Found</h1>
     {% endif %}
